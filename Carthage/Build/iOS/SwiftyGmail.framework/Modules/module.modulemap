@@ -1,0 +1,10 @@
+framework module SwiftyGmail {
+  umbrella header "SwiftyGmail.h"
+
+  export *
+  module * { export * }
+}
+
+module SwiftyGmail.Swift {
+    header "SwiftyGmail-Swift.h"
+}
