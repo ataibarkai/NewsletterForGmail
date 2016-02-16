@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 			
 			provider.searchMessages(
 				onUsername: "atai.barkai@gmail.com",
-				withSearchString: "from: frmsaul@gmail.com"
+				withSearchTerm: SearchTerm(.From("frmsaul@gmail.com"))
 			)
 			.startWithNext{ next -> () in
 				print(next)

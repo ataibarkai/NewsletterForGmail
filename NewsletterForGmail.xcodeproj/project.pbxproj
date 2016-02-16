@@ -39,6 +39,7 @@
 		6395A16A1C72A9F900E6A077 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15B1C72A9F900E6A077 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6395A16B1C72A9F900E6A077 /* TypeBurritoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */; };
 		6395A16C1C72A9F900E6A077 /* TypeBurritoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A1761C72B20900E6A077 /* SearchTermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1751C72B20900E6A077 /* SearchTermTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		6395A15A1C72A9F900E6A077 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		6395A15B1C72A9F900E6A077 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TypeBurritoFramework.framework; path = Carthage/Build/iOS/TypeBurritoFramework.framework; sourceTree = "<group>"; };
+		6395A1751C72B20900E6A077 /* SearchTermTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTermTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		6395A1281C72A94E00E6A077 /* NewsletterForGmailTests */ = {
 			isa = PBXGroup;
 			children = (
+				6395A1741C72B1EE00E6A077 /* SwiftyGmail-FappFramework-Tests */,
 				6395A1291C72A94E00E6A077 /* NewsletterForGmailTests.swift */,
 				6395A12B1C72A94E00E6A077 /* Info.plist */,
 			);
@@ -267,6 +270,14 @@
 				6395A1471C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift */,
 			);
 			name = GmailTypedReactiveAPIProvider;
+			sourceTree = "<group>";
+		};
+		6395A1741C72B1EE00E6A077 /* SwiftyGmail-FappFramework-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6395A1751C72B20900E6A077 /* SearchTermTests.swift */,
+			);
+			name = "SwiftyGmail-FappFramework-Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6395A12A1C72A94E00E6A077 /* NewsletterForGmailTests.swift in Sources */,
+				6395A1761C72B20900E6A077 /* SearchTermTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
