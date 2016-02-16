@@ -27,6 +27,7 @@ public extension Gmail {
 			
 			// NOTE: we MUST make sure to call the done(...) closure at some point
 			// HOWEVER this is not statically enforced due to the asynchronous nature of this API.
+			
 			// TODO: This is pretty fucking ugly. Major stylistic improvements can be made to this convention-based protocol
 			// both on on OAuth2's side and on Moya's side. Perhaps just one side would make a big difference.
 			//

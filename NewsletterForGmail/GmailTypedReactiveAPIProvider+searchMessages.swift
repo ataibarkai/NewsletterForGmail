@@ -13,7 +13,7 @@ import SwiftyJSON
 
 
 
-extension GmailReactiveTypedAPIProvider {
+extension GmailTypedReactiveAPIProvider {
 	
 	func searchMessages(onUsername username: String, withSearchString searchString: String)
 		-> SignalProducer<[GmailMessageReference], ReactiveMoya.Error>{

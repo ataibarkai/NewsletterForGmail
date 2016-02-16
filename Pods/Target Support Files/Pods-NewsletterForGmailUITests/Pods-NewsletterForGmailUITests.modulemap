@@ -1,6 +1,0 @@
-framework module Pods_NewsletterForGmailUITests {
-  umbrella header "Pods-NewsletterForGmailUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 		super.viewDidAppear(animated)
 		
 		
-		if let provider = try? GmailReactiveTypedAPIProvider(
+		if let provider = try? GmailTypedReactiveAPIProvider(
 		withClientId: "789483483852-pb0psft47jr3gds92uvd809tgqrvfcmv.apps.googleusercontent.com",
 		scope: "https://www.googleapis.com/auth/gmail.readonly"){
 			

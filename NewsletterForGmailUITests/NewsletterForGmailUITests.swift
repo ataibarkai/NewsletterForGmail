@@ -2,7 +2,7 @@
 //  NewsletterForGmailUITests.swift
 //  NewsletterForGmailUITests
 //
-//  Created by Atai Barkai on 2/12/16.
+//  Created by Atai Barkai on 2/15/16.
 //  Copyright © 2016 Atai Barkai. All rights reserved.
 //
 

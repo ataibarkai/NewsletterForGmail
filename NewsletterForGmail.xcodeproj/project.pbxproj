@@ -7,70 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		066886FBEF30FD9720DE65AB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70902AD1B3690C041571847C /* Pods.framework */; };
-		6395A0FB1C72740B00E6A077 /* SwiftyJSONCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A0FA1C72740B00E6A077 /* SwiftyJSONCompletion.swift */; };
-		6395A1021C72915100E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1011C72915100E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift */; };
-		63C72D061C70C6E10075362E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D011C70C6E10075362E /* Alamofire.framework */; };
-		63C72D071C70C6E10075362E /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D011C70C6E10075362E /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63C72D081C70C6E10075362E /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D021C70C6E10075362E /* Moya.framework */; };
-		63C72D091C70C6E10075362E /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D021C70C6E10075362E /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63C72D0A1C70C6E20075362E /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D031C70C6E10075362E /* OAuth2.framework */; };
-		63C72D0B1C70C6E20075362E /* OAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D031C70C6E10075362E /* OAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63C72D0C1C70C6E20075362E /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D041C70C6E10075362E /* Result.framework */; };
-		63C72D0D1C70C6E20075362E /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D041C70C6E10075362E /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63C72D111C70C7040075362E /* TypeBurritoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D101C70C7040075362E /* TypeBurritoFramework.framework */; };
-		63C72D121C70C7040075362E /* TypeBurritoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D101C70C7040075362E /* TypeBurritoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63C72D191C7108610075362E /* NSMutableURLRequest+OAuth2Signining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72D151C7108610075362E /* NSMutableURLRequest+OAuth2Signining.swift */; };
-		63C72D1A1C7108610075362E /* GmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72D161C7108610075362E /* GmailAPI.swift */; };
-		63C72D1B1C7108610075362E /* GmailAPI+OAuth2Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72D171C7108610075362E /* GmailAPI+OAuth2Provider.swift */; };
-		63C72D1C1C7108610075362E /* GmailOAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72D181C7108610075362E /* GmailOAuth2.swift */; };
-		63C72D1F1C7120C20075362E /* GmailReactiveTypedAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72D1E1C7120C20075362E /* GmailReactiveTypedAPIProvider.swift */; };
-		63C72D221C712BC00075362E /* GmailReactiveTypedAPIProvider+searchMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72D211C712BC00075362E /* GmailReactiveTypedAPIProvider+searchMessages.swift */; };
-		63C72D241C712C180075362E /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D231C712C180075362E /* ReactiveCocoa.framework */; };
-		63C72D251C712C180075362E /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D231C712C180075362E /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63C72D271C712C730075362E /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D261C712C730075362E /* ReactiveMoya.framework */; };
-		63C72D281C712C730075362E /* ReactiveMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63C72D261C712C730075362E /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		63C72D2B1C7130770075362E /* GmailMessageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C72D2A1C7130770075362E /* GmailMessageReference.swift */; };
-		63F0112B1C6E665300B7EB5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0112A1C6E665300B7EB5A /* AppDelegate.swift */; };
-		63F0112D1C6E665300B7EB5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0112C1C6E665300B7EB5A /* ViewController.swift */; };
-		63F011301C6E665300B7EB5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F0112E1C6E665300B7EB5A /* Main.storyboard */; };
-		63F011321C6E665400B7EB5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F011311C6E665400B7EB5A /* Assets.xcassets */; };
-		63F011351C6E665400B7EB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F011331C6E665400B7EB5A /* LaunchScreen.storyboard */; };
-		63F011401C6E665400B7EB5A /* NewsletterForGmailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0113F1C6E665400B7EB5A /* NewsletterForGmailTests.swift */; };
-		63F0114B1C6E665400B7EB5A /* NewsletterForGmailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F0114A1C6E665400B7EB5A /* NewsletterForGmailUITests.swift */; };
+		6395A1151C72A94E00E6A077 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1141C72A94E00E6A077 /* AppDelegate.swift */; };
+		6395A1171C72A94E00E6A077 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1161C72A94E00E6A077 /* ViewController.swift */; };
+		6395A11A1C72A94E00E6A077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6395A1181C72A94E00E6A077 /* Main.storyboard */; };
+		6395A11C1C72A94E00E6A077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6395A11B1C72A94E00E6A077 /* Assets.xcassets */; };
+		6395A11F1C72A94E00E6A077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6395A11D1C72A94E00E6A077 /* LaunchScreen.storyboard */; };
+		6395A12A1C72A94E00E6A077 /* NewsletterForGmailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1291C72A94E00E6A077 /* NewsletterForGmailTests.swift */; };
+		6395A1351C72A94E00E6A077 /* NewsletterForGmailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1341C72A94E00E6A077 /* NewsletterForGmailUITests.swift */; };
+		6395A14B1C72A98700E6A077 /* GmailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1421C72A98700E6A077 /* GmailAPI.swift */; };
+		6395A14C1C72A98700E6A077 /* GmailAPI+OAuth2Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1431C72A98700E6A077 /* GmailAPI+OAuth2Provider.swift */; };
+		6395A14D1C72A98700E6A077 /* GmailMessageReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1441C72A98700E6A077 /* GmailMessageReference.swift */; };
+		6395A14E1C72A98700E6A077 /* GmailOAuth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1451C72A98700E6A077 /* GmailOAuth2.swift */; };
+		6395A14F1C72A98700E6A077 /* GmailTypedReactiveAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1461C72A98700E6A077 /* GmailTypedReactiveAPIProvider.swift */; };
+		6395A1501C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1471C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift */; };
+		6395A1511C72A98700E6A077 /* NSMutableURLRequest+OAuth2Signining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1481C72A98700E6A077 /* NSMutableURLRequest+OAuth2Signining.swift */; };
+		6395A1521C72A98700E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1491C72A98700E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift */; };
+		6395A1531C72A98700E6A077 /* SwiftyJSONCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A14A1C72A98700E6A077 /* SwiftyJSONCompletion.swift */; };
+		6395A15D1C72A9F900E6A077 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1551C72A9F900E6A077 /* Alamofire.framework */; };
+		6395A15E1C72A9F900E6A077 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1551C72A9F900E6A077 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A15F1C72A9F900E6A077 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1561C72A9F900E6A077 /* Moya.framework */; };
+		6395A1601C72A9F900E6A077 /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1561C72A9F900E6A077 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A1611C72A9F900E6A077 /* OAuth2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1571C72A9F900E6A077 /* OAuth2.framework */; };
+		6395A1621C72A9F900E6A077 /* OAuth2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1571C72A9F900E6A077 /* OAuth2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A1631C72A9F900E6A077 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1581C72A9F900E6A077 /* ReactiveCocoa.framework */; };
+		6395A1641C72A9F900E6A077 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1581C72A9F900E6A077 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A1651C72A9F900E6A077 /* ReactiveMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1591C72A9F900E6A077 /* ReactiveMoya.framework */; };
+		6395A1661C72A9F900E6A077 /* ReactiveMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A1591C72A9F900E6A077 /* ReactiveMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A1671C72A9F900E6A077 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15A1C72A9F900E6A077 /* Result.framework */; };
+		6395A1681C72A9F900E6A077 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15A1C72A9F900E6A077 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A1691C72A9F900E6A077 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15B1C72A9F900E6A077 /* SwiftyJSON.framework */; };
+		6395A16A1C72A9F900E6A077 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15B1C72A9F900E6A077 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6395A16B1C72A9F900E6A077 /* TypeBurritoFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */; };
+		6395A16C1C72A9F900E6A077 /* TypeBurritoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		63F0113C1C6E665400B7EB5A /* PBXContainerItemProxy */ = {
+		6395A1261C72A94E00E6A077 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 63F0111F1C6E665300B7EB5A /* Project object */;
+			containerPortal = 6395A1091C72A94E00E6A077 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 63F011261C6E665300B7EB5A;
+			remoteGlobalIDString = 6395A1101C72A94E00E6A077;
 			remoteInfo = NewsletterForGmail;
 		};
-		63F011471C6E665400B7EB5A /* PBXContainerItemProxy */ = {
+		6395A1311C72A94E00E6A077 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 63F0111F1C6E665300B7EB5A /* Project object */;
+			containerPortal = 6395A1091C72A94E00E6A077 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 63F011261C6E665300B7EB5A;
+			remoteGlobalIDString = 6395A1101C72A94E00E6A077;
 			remoteInfo = NewsletterForGmail;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		63F0115B1C6E73EF00B7EB5A /* Embed Frameworks */ = {
+		6395A16D1C72A9FA00E6A077 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				63C72D091C70C6E10075362E /* Moya.framework in Embed Frameworks */,
-				63C72D251C712C180075362E /* ReactiveCocoa.framework in Embed Frameworks */,
-				63C72D281C712C730075362E /* ReactiveMoya.framework in Embed Frameworks */,
-				63C72D0B1C70C6E20075362E /* OAuth2.framework in Embed Frameworks */,
-				63C72D071C70C6E10075362E /* Alamofire.framework in Embed Frameworks */,
-				63C72D0D1C70C6E20075362E /* Result.framework in Embed Frameworks */,
-				63C72D121C70C7040075362E /* TypeBurritoFramework.framework in Embed Frameworks */,
+				6395A1601C72A9F900E6A077 /* Moya.framework in Embed Frameworks */,
+				6395A16C1C72A9F900E6A077 /* TypeBurritoFramework.framework in Embed Frameworks */,
+				6395A1661C72A9F900E6A077 /* ReactiveMoya.framework in Embed Frameworks */,
+				6395A1621C72A9F900E6A077 /* OAuth2.framework in Embed Frameworks */,
+				6395A1681C72A9F900E6A077 /* Result.framework in Embed Frameworks */,
+				6395A16A1C72A9F900E6A077 /* SwiftyJSON.framework in Embed Frameworks */,
+				6395A15E1C72A9F900E6A077 /* Alamofire.framework in Embed Frameworks */,
+				6395A1641C72A9F900E6A077 /* ReactiveCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,64 +80,62 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		416B227E7E48E1D64CD7C1C9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6395A0FA1C72740B00E6A077 /* SwiftyJSONCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONCompletion.swift; sourceTree = "<group>"; };
-		6395A1011C72915100E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReactiveCocoa+Moya+SwiftyJSON.swift"; sourceTree = "<group>"; };
-		63C72D011C70C6E10075362E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		63C72D021C70C6E10075362E /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
-		63C72D031C70C6E10075362E /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2.framework; path = Carthage/Build/iOS/OAuth2.framework; sourceTree = "<group>"; };
-		63C72D041C70C6E10075362E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		63C72D101C70C7040075362E /* TypeBurritoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TypeBurritoFramework.framework; path = Carthage/Build/iOS/TypeBurritoFramework.framework; sourceTree = "<group>"; };
-		63C72D151C7108610075362E /* NSMutableURLRequest+OAuth2Signining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableURLRequest+OAuth2Signining.swift"; sourceTree = "<group>"; };
-		63C72D161C7108610075362E /* GmailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailAPI.swift; sourceTree = "<group>"; };
-		63C72D171C7108610075362E /* GmailAPI+OAuth2Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GmailAPI+OAuth2Provider.swift"; sourceTree = "<group>"; };
-		63C72D181C7108610075362E /* GmailOAuth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailOAuth2.swift; sourceTree = "<group>"; };
-		63C72D1E1C7120C20075362E /* GmailReactiveTypedAPIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailReactiveTypedAPIProvider.swift; sourceTree = "<group>"; };
-		63C72D211C712BC00075362E /* GmailReactiveTypedAPIProvider+searchMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GmailReactiveTypedAPIProvider+searchMessages.swift"; sourceTree = "<group>"; };
-		63C72D231C712C180075362E /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		63C72D261C712C730075362E /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
-		63C72D2A1C7130770075362E /* GmailMessageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailMessageReference.swift; sourceTree = "<group>"; };
-		63F011271C6E665300B7EB5A /* NewsletterForGmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsletterForGmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		63F0112A1C6E665300B7EB5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63F0112C1C6E665300B7EB5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		63F0112F1C6E665300B7EB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		63F011311C6E665400B7EB5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63F011341C6E665400B7EB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		63F011361C6E665400B7EB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63F0113B1C6E665400B7EB5A /* NewsletterForGmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsletterForGmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63F0113F1C6E665400B7EB5A /* NewsletterForGmailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterForGmailTests.swift; sourceTree = "<group>"; };
-		63F011411C6E665400B7EB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63F011461C6E665400B7EB5A /* NewsletterForGmailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsletterForGmailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		63F0114A1C6E665400B7EB5A /* NewsletterForGmailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterForGmailUITests.swift; sourceTree = "<group>"; };
-		63F0114C1C6E665400B7EB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70902AD1B3690C041571847C /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		81EBC3BDA9042BB412EAC233 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6395A1111C72A94E00E6A077 /* NewsletterForGmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsletterForGmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6395A1141C72A94E00E6A077 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6395A1161C72A94E00E6A077 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6395A1191C72A94E00E6A077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6395A11B1C72A94E00E6A077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6395A11E1C72A94E00E6A077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6395A1201C72A94E00E6A077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6395A1251C72A94E00E6A077 /* NewsletterForGmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsletterForGmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6395A1291C72A94E00E6A077 /* NewsletterForGmailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterForGmailTests.swift; sourceTree = "<group>"; };
+		6395A12B1C72A94E00E6A077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6395A1301C72A94E00E6A077 /* NewsletterForGmailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsletterForGmailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6395A1341C72A94E00E6A077 /* NewsletterForGmailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterForGmailUITests.swift; sourceTree = "<group>"; };
+		6395A1361C72A94E00E6A077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6395A1421C72A98700E6A077 /* GmailAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailAPI.swift; sourceTree = "<group>"; };
+		6395A1431C72A98700E6A077 /* GmailAPI+OAuth2Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GmailAPI+OAuth2Provider.swift"; sourceTree = "<group>"; };
+		6395A1441C72A98700E6A077 /* GmailMessageReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailMessageReference.swift; sourceTree = "<group>"; };
+		6395A1451C72A98700E6A077 /* GmailOAuth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailOAuth2.swift; sourceTree = "<group>"; };
+		6395A1461C72A98700E6A077 /* GmailTypedReactiveAPIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailTypedReactiveAPIProvider.swift; sourceTree = "<group>"; };
+		6395A1471C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GmailTypedReactiveAPIProvider+searchMessages.swift"; sourceTree = "<group>"; };
+		6395A1481C72A98700E6A077 /* NSMutableURLRequest+OAuth2Signining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMutableURLRequest+OAuth2Signining.swift"; sourceTree = "<group>"; };
+		6395A1491C72A98700E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReactiveCocoa+Moya+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		6395A14A1C72A98700E6A077 /* SwiftyJSONCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSONCompletion.swift; sourceTree = "<group>"; };
+		6395A1551C72A9F900E6A077 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		6395A1561C72A9F900E6A077 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		6395A1571C72A9F900E6A077 /* OAuth2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuth2.framework; path = Carthage/Build/iOS/OAuth2.framework; sourceTree = "<group>"; };
+		6395A1581C72A9F900E6A077 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		6395A1591C72A9F900E6A077 /* ReactiveMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveMoya.framework; path = Carthage/Build/iOS/ReactiveMoya.framework; sourceTree = "<group>"; };
+		6395A15A1C72A9F900E6A077 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		6395A15B1C72A9F900E6A077 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TypeBurritoFramework.framework; path = Carthage/Build/iOS/TypeBurritoFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		63F011241C6E665300B7EB5A /* Frameworks */ = {
+		6395A10E1C72A94E00E6A077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63C72D081C70C6E10075362E /* Moya.framework in Frameworks */,
-				63C72D241C712C180075362E /* ReactiveCocoa.framework in Frameworks */,
-				63C72D271C712C730075362E /* ReactiveMoya.framework in Frameworks */,
-				63C72D0A1C70C6E20075362E /* OAuth2.framework in Frameworks */,
-				63C72D061C70C6E10075362E /* Alamofire.framework in Frameworks */,
-				63C72D0C1C70C6E20075362E /* Result.framework in Frameworks */,
-				63C72D111C70C7040075362E /* TypeBurritoFramework.framework in Frameworks */,
-				066886FBEF30FD9720DE65AB /* Pods.framework in Frameworks */,
+				6395A15F1C72A9F900E6A077 /* Moya.framework in Frameworks */,
+				6395A16B1C72A9F900E6A077 /* TypeBurritoFramework.framework in Frameworks */,
+				6395A1651C72A9F900E6A077 /* ReactiveMoya.framework in Frameworks */,
+				6395A1611C72A9F900E6A077 /* OAuth2.framework in Frameworks */,
+				6395A1671C72A9F900E6A077 /* Result.framework in Frameworks */,
+				6395A1691C72A9F900E6A077 /* SwiftyJSON.framework in Frameworks */,
+				6395A15D1C72A9F900E6A077 /* Alamofire.framework in Frameworks */,
+				6395A1631C72A9F900E6A077 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F011381C6E665400B7EB5A /* Frameworks */ = {
+		6395A1221C72A94E00E6A077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F011431C6E665400B7EB5A /* Frameworks */ = {
+		6395A12D1C72A94E00E6A077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,154 +145,141 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		284783C018D18B25A1538981 /* Pods */ = {
+		6395A1081C72A94E00E6A077 = {
 			isa = PBXGroup;
 			children = (
-				81EBC3BDA9042BB412EAC233 /* Pods.debug.xcconfig */,
-				416B227E7E48E1D64CD7C1C9 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6395A1001C728A4800E6A077 /* Base Moya Gmail API */ = {
-			isa = PBXGroup;
-			children = (
-				63C72D161C7108610075362E /* GmailAPI.swift */,
-				63C72D171C7108610075362E /* GmailAPI+OAuth2Provider.swift */,
-				63C72D151C7108610075362E /* NSMutableURLRequest+OAuth2Signining.swift */,
-			);
-			name = "Base Moya Gmail API";
-			sourceTree = "<group>";
-		};
-		6395A1031C72A67A00E6A077 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				6395A0FA1C72740B00E6A077 /* SwiftyJSONCompletion.swift */,
-				6395A1011C72915100E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift */,
-				63C72D181C7108610075362E /* GmailOAuth2.swift */,
-			);
-			name = Tools;
-			sourceTree = "<group>";
-		};
-		6395A1041C72A6A300E6A077 /* GmailReactiveTypedAPIProvider */ = {
-			isa = PBXGroup;
-			children = (
-				63C72D1E1C7120C20075362E /* GmailReactiveTypedAPIProvider.swift */,
-				63C72D211C712BC00075362E /* GmailReactiveTypedAPIProvider+searchMessages.swift */,
-			);
-			name = GmailReactiveTypedAPIProvider;
-			sourceTree = "<group>";
-		};
-		63C72D001C70C5D00075362E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				63C72D261C712C730075362E /* ReactiveMoya.framework */,
-				63C72D231C712C180075362E /* ReactiveCocoa.framework */,
-				63C72D101C70C7040075362E /* TypeBurritoFramework.framework */,
-				63C72D011C70C6E10075362E /* Alamofire.framework */,
-				63C72D021C70C6E10075362E /* Moya.framework */,
-				63C72D031C70C6E10075362E /* OAuth2.framework */,
-				63C72D041C70C6E10075362E /* Result.framework */,
-				70902AD1B3690C041571847C /* Pods.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		63C72D1D1C7108740075362E /* SwiftyGmail-FappFramework */ = {
-			isa = PBXGroup;
-			children = (
-				6395A1031C72A67A00E6A077 /* Tools */,
-				63C72D201C7128AC0075362E /* GmailReactiveTypedAPI */,
-			);
-			name = "SwiftyGmail-FappFramework";
-			sourceTree = "<group>";
-		};
-		63C72D201C7128AC0075362E /* GmailReactiveTypedAPI */ = {
-			isa = PBXGroup;
-			children = (
-				6395A1001C728A4800E6A077 /* Base Moya Gmail API */,
-				63C72D291C71305F0075362E /* GmailTypes */,
-				6395A1041C72A6A300E6A077 /* GmailReactiveTypedAPIProvider */,
-			);
-			name = GmailReactiveTypedAPI;
-			sourceTree = "<group>";
-		};
-		63C72D291C71305F0075362E /* GmailTypes */ = {
-			isa = PBXGroup;
-			children = (
-				63C72D2A1C7130770075362E /* GmailMessageReference.swift */,
-			);
-			name = GmailTypes;
-			sourceTree = "<group>";
-		};
-		63F0111E1C6E665300B7EB5A = {
-			isa = PBXGroup;
-			children = (
-				63C72D001C70C5D00075362E /* Frameworks */,
-				63F011291C6E665300B7EB5A /* NewsletterForGmail */,
-				63F0113E1C6E665400B7EB5A /* NewsletterForGmailTests */,
-				63F011491C6E665400B7EB5A /* NewsletterForGmailUITests */,
-				63F011281C6E665300B7EB5A /* Products */,
-				284783C018D18B25A1538981 /* Pods */,
+				6395A16E1C72AA0B00E6A077 /* Frameworks */,
+				6395A1131C72A94E00E6A077 /* NewsletterForGmail */,
+				6395A1281C72A94E00E6A077 /* NewsletterForGmailTests */,
+				6395A1331C72A94E00E6A077 /* NewsletterForGmailUITests */,
+				6395A1121C72A94E00E6A077 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		63F011281C6E665300B7EB5A /* Products */ = {
+		6395A1121C72A94E00E6A077 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63F011271C6E665300B7EB5A /* NewsletterForGmail.app */,
-				63F0113B1C6E665400B7EB5A /* NewsletterForGmailTests.xctest */,
-				63F011461C6E665400B7EB5A /* NewsletterForGmailUITests.xctest */,
+				6395A1111C72A94E00E6A077 /* NewsletterForGmail.app */,
+				6395A1251C72A94E00E6A077 /* NewsletterForGmailTests.xctest */,
+				6395A1301C72A94E00E6A077 /* NewsletterForGmailUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		63F011291C6E665300B7EB5A /* NewsletterForGmail */ = {
+		6395A1131C72A94E00E6A077 /* NewsletterForGmail */ = {
 			isa = PBXGroup;
 			children = (
-				63C72D1D1C7108740075362E /* SwiftyGmail-FappFramework */,
-				63F0112A1C6E665300B7EB5A /* AppDelegate.swift */,
-				63F0112C1C6E665300B7EB5A /* ViewController.swift */,
-				63F0112E1C6E665300B7EB5A /* Main.storyboard */,
-				63F011311C6E665400B7EB5A /* Assets.xcassets */,
-				63F011331C6E665400B7EB5A /* LaunchScreen.storyboard */,
-				63F011361C6E665400B7EB5A /* Info.plist */,
+				6395A1541C72A98E00E6A077 /* SwiftyGmail-FappFramework */,
+				6395A1141C72A94E00E6A077 /* AppDelegate.swift */,
+				6395A1161C72A94E00E6A077 /* ViewController.swift */,
+				6395A1181C72A94E00E6A077 /* Main.storyboard */,
+				6395A11B1C72A94E00E6A077 /* Assets.xcassets */,
+				6395A11D1C72A94E00E6A077 /* LaunchScreen.storyboard */,
+				6395A1201C72A94E00E6A077 /* Info.plist */,
 			);
 			path = NewsletterForGmail;
 			sourceTree = "<group>";
 		};
-		63F0113E1C6E665400B7EB5A /* NewsletterForGmailTests */ = {
+		6395A1281C72A94E00E6A077 /* NewsletterForGmailTests */ = {
 			isa = PBXGroup;
 			children = (
-				63F0113F1C6E665400B7EB5A /* NewsletterForGmailTests.swift */,
-				63F011411C6E665400B7EB5A /* Info.plist */,
+				6395A1291C72A94E00E6A077 /* NewsletterForGmailTests.swift */,
+				6395A12B1C72A94E00E6A077 /* Info.plist */,
 			);
 			path = NewsletterForGmailTests;
 			sourceTree = "<group>";
 		};
-		63F011491C6E665400B7EB5A /* NewsletterForGmailUITests */ = {
+		6395A1331C72A94E00E6A077 /* NewsletterForGmailUITests */ = {
 			isa = PBXGroup;
 			children = (
-				63F0114A1C6E665400B7EB5A /* NewsletterForGmailUITests.swift */,
-				63F0114C1C6E665400B7EB5A /* Info.plist */,
+				6395A1341C72A94E00E6A077 /* NewsletterForGmailUITests.swift */,
+				6395A1361C72A94E00E6A077 /* Info.plist */,
 			);
 			path = NewsletterForGmailUITests;
+			sourceTree = "<group>";
+		};
+		6395A1541C72A98E00E6A077 /* SwiftyGmail-FappFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6395A16F1C72AAAB00E6A077 /* Generic Tools */,
+				6395A1701C72AAB500E6A077 /* GmailTypedReactiveAPI */,
+			);
+			name = "SwiftyGmail-FappFramework";
+			sourceTree = "<group>";
+		};
+		6395A16E1C72AA0B00E6A077 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6395A1551C72A9F900E6A077 /* Alamofire.framework */,
+				6395A1561C72A9F900E6A077 /* Moya.framework */,
+				6395A1571C72A9F900E6A077 /* OAuth2.framework */,
+				6395A1581C72A9F900E6A077 /* ReactiveCocoa.framework */,
+				6395A1591C72A9F900E6A077 /* ReactiveMoya.framework */,
+				6395A15A1C72A9F900E6A077 /* Result.framework */,
+				6395A15B1C72A9F900E6A077 /* SwiftyJSON.framework */,
+				6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6395A16F1C72AAAB00E6A077 /* Generic Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6395A1491C72A98700E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift */,
+				6395A14A1C72A98700E6A077 /* SwiftyJSONCompletion.swift */,
+				6395A1451C72A98700E6A077 /* GmailOAuth2.swift */,
+			);
+			name = "Generic Tools";
+			sourceTree = "<group>";
+		};
+		6395A1701C72AAB500E6A077 /* GmailTypedReactiveAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6395A1711C72AACB00E6A077 /* Base Untyped Non-Reactive Gmail API */,
+				6395A1721C72AB1600E6A077 /* Gmail API Types */,
+				6395A1731C72AB4200E6A077 /* GmailTypedReactiveAPIProvider */,
+			);
+			name = GmailTypedReactiveAPI;
+			sourceTree = "<group>";
+		};
+		6395A1711C72AACB00E6A077 /* Base Untyped Non-Reactive Gmail API */ = {
+			isa = PBXGroup;
+			children = (
+				6395A1421C72A98700E6A077 /* GmailAPI.swift */,
+				6395A1431C72A98700E6A077 /* GmailAPI+OAuth2Provider.swift */,
+				6395A1481C72A98700E6A077 /* NSMutableURLRequest+OAuth2Signining.swift */,
+			);
+			name = "Base Untyped Non-Reactive Gmail API";
+			sourceTree = "<group>";
+		};
+		6395A1721C72AB1600E6A077 /* Gmail API Types */ = {
+			isa = PBXGroup;
+			children = (
+				6395A1441C72A98700E6A077 /* GmailMessageReference.swift */,
+			);
+			name = "Gmail API Types";
+			sourceTree = "<group>";
+		};
+		6395A1731C72AB4200E6A077 /* GmailTypedReactiveAPIProvider */ = {
+			isa = PBXGroup;
+			children = (
+				6395A1461C72A98700E6A077 /* GmailTypedReactiveAPIProvider.swift */,
+				6395A1471C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift */,
+			);
+			name = GmailTypedReactiveAPIProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63F011261C6E665300B7EB5A /* NewsletterForGmail */ = {
+		6395A1101C72A94E00E6A077 /* NewsletterForGmail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63F0114F1C6E665400B7EB5A /* Build configuration list for PBXNativeTarget "NewsletterForGmail" */;
+			buildConfigurationList = 6395A1391C72A94E00E6A077 /* Build configuration list for PBXNativeTarget "NewsletterForGmail" */;
 			buildPhases = (
-				950998F6CF16FA7E61443832 /* Check Pods Manifest.lock */,
-				63F011231C6E665300B7EB5A /* Sources */,
-				63F011241C6E665300B7EB5A /* Frameworks */,
-				63F011251C6E665300B7EB5A /* Resources */,
-				63F0115B1C6E73EF00B7EB5A /* Embed Frameworks */,
-				0A8823CB7481F924A7817374 /* Embed Pods Frameworks */,
-				8F9D013D1B44576BE14AE3EC /* Copy Pods Resources */,
+				6395A10D1C72A94E00E6A077 /* Sources */,
+				6395A10E1C72A94E00E6A077 /* Frameworks */,
+				6395A10F1C72A94E00E6A077 /* Resources */,
+				6395A16D1C72A9FA00E6A077 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,69 +287,69 @@
 			);
 			name = NewsletterForGmail;
 			productName = NewsletterForGmail;
-			productReference = 63F011271C6E665300B7EB5A /* NewsletterForGmail.app */;
+			productReference = 6395A1111C72A94E00E6A077 /* NewsletterForGmail.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63F0113A1C6E665400B7EB5A /* NewsletterForGmailTests */ = {
+		6395A1241C72A94E00E6A077 /* NewsletterForGmailTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63F011521C6E665400B7EB5A /* Build configuration list for PBXNativeTarget "NewsletterForGmailTests" */;
+			buildConfigurationList = 6395A13C1C72A94E00E6A077 /* Build configuration list for PBXNativeTarget "NewsletterForGmailTests" */;
 			buildPhases = (
-				63F011371C6E665400B7EB5A /* Sources */,
-				63F011381C6E665400B7EB5A /* Frameworks */,
-				63F011391C6E665400B7EB5A /* Resources */,
+				6395A1211C72A94E00E6A077 /* Sources */,
+				6395A1221C72A94E00E6A077 /* Frameworks */,
+				6395A1231C72A94E00E6A077 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				63F0113D1C6E665400B7EB5A /* PBXTargetDependency */,
+				6395A1271C72A94E00E6A077 /* PBXTargetDependency */,
 			);
 			name = NewsletterForGmailTests;
 			productName = NewsletterForGmailTests;
-			productReference = 63F0113B1C6E665400B7EB5A /* NewsletterForGmailTests.xctest */;
+			productReference = 6395A1251C72A94E00E6A077 /* NewsletterForGmailTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		63F011451C6E665400B7EB5A /* NewsletterForGmailUITests */ = {
+		6395A12F1C72A94E00E6A077 /* NewsletterForGmailUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63F011551C6E665400B7EB5A /* Build configuration list for PBXNativeTarget "NewsletterForGmailUITests" */;
+			buildConfigurationList = 6395A13F1C72A94E00E6A077 /* Build configuration list for PBXNativeTarget "NewsletterForGmailUITests" */;
 			buildPhases = (
-				63F011421C6E665400B7EB5A /* Sources */,
-				63F011431C6E665400B7EB5A /* Frameworks */,
-				63F011441C6E665400B7EB5A /* Resources */,
+				6395A12C1C72A94E00E6A077 /* Sources */,
+				6395A12D1C72A94E00E6A077 /* Frameworks */,
+				6395A12E1C72A94E00E6A077 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				63F011481C6E665400B7EB5A /* PBXTargetDependency */,
+				6395A1321C72A94E00E6A077 /* PBXTargetDependency */,
 			);
 			name = NewsletterForGmailUITests;
 			productName = NewsletterForGmailUITests;
-			productReference = 63F011461C6E665400B7EB5A /* NewsletterForGmailUITests.xctest */;
+			productReference = 6395A1301C72A94E00E6A077 /* NewsletterForGmailUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		63F0111F1C6E665300B7EB5A /* Project object */ = {
+		6395A1091C72A94E00E6A077 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Atai Barkai";
 				TargetAttributes = {
-					63F011261C6E665300B7EB5A = {
+					6395A1101C72A94E00E6A077 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
-					63F0113A1C6E665400B7EB5A = {
+					6395A1241C72A94E00E6A077 = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 63F011261C6E665300B7EB5A;
+						TestTargetID = 6395A1101C72A94E00E6A077;
 					};
-					63F011451C6E665400B7EB5A = {
+					6395A12F1C72A94E00E6A077 = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 63F011261C6E665300B7EB5A;
+						TestTargetID = 6395A1101C72A94E00E6A077;
 					};
 				};
 			};
-			buildConfigurationList = 63F011221C6E665300B7EB5A /* Build configuration list for PBXProject "NewsletterForGmail" */;
+			buildConfigurationList = 6395A10C1C72A94E00E6A077 /* Build configuration list for PBXProject "NewsletterForGmail" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -370,37 +357,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 63F0111E1C6E665300B7EB5A;
-			productRefGroup = 63F011281C6E665300B7EB5A /* Products */;
+			mainGroup = 6395A1081C72A94E00E6A077;
+			productRefGroup = 6395A1121C72A94E00E6A077 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63F011261C6E665300B7EB5A /* NewsletterForGmail */,
-				63F0113A1C6E665400B7EB5A /* NewsletterForGmailTests */,
-				63F011451C6E665400B7EB5A /* NewsletterForGmailUITests */,
+				6395A1101C72A94E00E6A077 /* NewsletterForGmail */,
+				6395A1241C72A94E00E6A077 /* NewsletterForGmailTests */,
+				6395A12F1C72A94E00E6A077 /* NewsletterForGmailUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		63F011251C6E665300B7EB5A /* Resources */ = {
+		6395A10F1C72A94E00E6A077 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63F011351C6E665400B7EB5A /* LaunchScreen.storyboard in Resources */,
-				63F011321C6E665400B7EB5A /* Assets.xcassets in Resources */,
-				63F011301C6E665300B7EB5A /* Main.storyboard in Resources */,
+				6395A11F1C72A94E00E6A077 /* LaunchScreen.storyboard in Resources */,
+				6395A11C1C72A94E00E6A077 /* Assets.xcassets in Resources */,
+				6395A11A1C72A94E00E6A077 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F011391C6E665400B7EB5A /* Resources */ = {
+		6395A1231C72A94E00E6A077 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F011441C6E665400B7EB5A /* Resources */ = {
+		6395A12E1C72A94E00E6A077 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,117 +396,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0A8823CB7481F924A7817374 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F9D013D1B44576BE14AE3EC /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		950998F6CF16FA7E61443832 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		63F011231C6E665300B7EB5A /* Sources */ = {
+		6395A10D1C72A94E00E6A077 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6395A1021C72915100E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift in Sources */,
-				63C72D221C712BC00075362E /* GmailReactiveTypedAPIProvider+searchMessages.swift in Sources */,
-				63C72D1B1C7108610075362E /* GmailAPI+OAuth2Provider.swift in Sources */,
-				63C72D1F1C7120C20075362E /* GmailReactiveTypedAPIProvider.swift in Sources */,
-				63C72D2B1C7130770075362E /* GmailMessageReference.swift in Sources */,
-				63C72D1C1C7108610075362E /* GmailOAuth2.swift in Sources */,
-				63C72D191C7108610075362E /* NSMutableURLRequest+OAuth2Signining.swift in Sources */,
-				63C72D1A1C7108610075362E /* GmailAPI.swift in Sources */,
-				63F0112D1C6E665300B7EB5A /* ViewController.swift in Sources */,
-				6395A0FB1C72740B00E6A077 /* SwiftyJSONCompletion.swift in Sources */,
-				63F0112B1C6E665300B7EB5A /* AppDelegate.swift in Sources */,
+				6395A14D1C72A98700E6A077 /* GmailMessageReference.swift in Sources */,
+				6395A14F1C72A98700E6A077 /* GmailTypedReactiveAPIProvider.swift in Sources */,
+				6395A14E1C72A98700E6A077 /* GmailOAuth2.swift in Sources */,
+				6395A1171C72A94E00E6A077 /* ViewController.swift in Sources */,
+				6395A1531C72A98700E6A077 /* SwiftyJSONCompletion.swift in Sources */,
+				6395A14C1C72A98700E6A077 /* GmailAPI+OAuth2Provider.swift in Sources */,
+				6395A1151C72A94E00E6A077 /* AppDelegate.swift in Sources */,
+				6395A1511C72A98700E6A077 /* NSMutableURLRequest+OAuth2Signining.swift in Sources */,
+				6395A1501C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift in Sources */,
+				6395A1521C72A98700E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift in Sources */,
+				6395A14B1C72A98700E6A077 /* GmailAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F011371C6E665400B7EB5A /* Sources */ = {
+		6395A1211C72A94E00E6A077 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63F011401C6E665400B7EB5A /* NewsletterForGmailTests.swift in Sources */,
+				6395A12A1C72A94E00E6A077 /* NewsletterForGmailTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F011421C6E665400B7EB5A /* Sources */ = {
+		6395A12C1C72A94E00E6A077 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63F0114B1C6E665400B7EB5A /* NewsletterForGmailUITests.swift in Sources */,
+				6395A1351C72A94E00E6A077 /* NewsletterForGmailUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		63F0113D1C6E665400B7EB5A /* PBXTargetDependency */ = {
+		6395A1271C72A94E00E6A077 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63F011261C6E665300B7EB5A /* NewsletterForGmail */;
-			targetProxy = 63F0113C1C6E665400B7EB5A /* PBXContainerItemProxy */;
+			target = 6395A1101C72A94E00E6A077 /* NewsletterForGmail */;
+			targetProxy = 6395A1261C72A94E00E6A077 /* PBXContainerItemProxy */;
 		};
-		63F011481C6E665400B7EB5A /* PBXTargetDependency */ = {
+		6395A1321C72A94E00E6A077 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63F011261C6E665300B7EB5A /* NewsletterForGmail */;
-			targetProxy = 63F011471C6E665400B7EB5A /* PBXContainerItemProxy */;
+			target = 6395A1101C72A94E00E6A077 /* NewsletterForGmail */;
+			targetProxy = 6395A1311C72A94E00E6A077 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		63F0112E1C6E665300B7EB5A /* Main.storyboard */ = {
+		6395A1181C72A94E00E6A077 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				63F0112F1C6E665300B7EB5A /* Base */,
+				6395A1191C72A94E00E6A077 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		63F011331C6E665400B7EB5A /* LaunchScreen.storyboard */ = {
+		6395A11D1C72A94E00E6A077 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				63F011341C6E665400B7EB5A /* Base */,
+				6395A11E1C72A94E00E6A077 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -527,7 +466,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		63F0114D1C6E665400B7EB5A /* Debug */ = {
+		6395A1371C72A94E00E6A077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -572,7 +511,7 @@
 			};
 			name = Debug;
 		};
-		63F0114E1C6E665400B7EB5A /* Release */ = {
+		6395A1381C72A94E00E6A077 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -610,9 +549,8 @@
 			};
 			name = Release;
 		};
-		63F011501C6E665400B7EB5A /* Debug */ = {
+		6395A13A1C72A94E00E6A077 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81EBC3BDA9042BB412EAC233 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -626,9 +564,8 @@
 			};
 			name = Debug;
 		};
-		63F011511C6E665400B7EB5A /* Release */ = {
+		6395A13B1C72A94E00E6A077 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 416B227E7E48E1D64CD7C1C9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -642,7 +579,7 @@
 			};
 			name = Release;
 		};
-		63F011531C6E665400B7EB5A /* Debug */ = {
+		6395A13D1C72A94E00E6A077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -654,7 +591,7 @@
 			};
 			name = Debug;
 		};
-		63F011541C6E665400B7EB5A /* Release */ = {
+		6395A13E1C72A94E00E6A077 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -666,7 +603,7 @@
 			};
 			name = Release;
 		};
-		63F011561C6E665400B7EB5A /* Debug */ = {
+		6395A1401C72A94E00E6A077 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = NewsletterForGmailUITests/Info.plist;
@@ -678,7 +615,7 @@
 			};
 			name = Debug;
 		};
-		63F011571C6E665400B7EB5A /* Release */ = {
+		6395A1411C72A94E00E6A077 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = NewsletterForGmailUITests/Info.plist;
@@ -693,43 +630,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63F011221C6E665300B7EB5A /* Build configuration list for PBXProject "NewsletterForGmail" */ = {
+		6395A10C1C72A94E00E6A077 /* Build configuration list for PBXProject "NewsletterForGmail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63F0114D1C6E665400B7EB5A /* Debug */,
-				63F0114E1C6E665400B7EB5A /* Release */,
+				6395A1371C72A94E00E6A077 /* Debug */,
+				6395A1381C72A94E00E6A077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63F0114F1C6E665400B7EB5A /* Build configuration list for PBXNativeTarget "NewsletterForGmail" */ = {
+		6395A1391C72A94E00E6A077 /* Build configuration list for PBXNativeTarget "NewsletterForGmail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63F011501C6E665400B7EB5A /* Debug */,
-				63F011511C6E665400B7EB5A /* Release */,
+				6395A13A1C72A94E00E6A077 /* Debug */,
+				6395A13B1C72A94E00E6A077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63F011521C6E665400B7EB5A /* Build configuration list for PBXNativeTarget "NewsletterForGmailTests" */ = {
+		6395A13C1C72A94E00E6A077 /* Build configuration list for PBXNativeTarget "NewsletterForGmailTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63F011531C6E665400B7EB5A /* Debug */,
-				63F011541C6E665400B7EB5A /* Release */,
+				6395A13D1C72A94E00E6A077 /* Debug */,
+				6395A13E1C72A94E00E6A077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63F011551C6E665400B7EB5A /* Build configuration list for PBXNativeTarget "NewsletterForGmailUITests" */ = {
+		6395A13F1C72A94E00E6A077 /* Build configuration list for PBXNativeTarget "NewsletterForGmailUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63F011561C6E665400B7EB5A /* Debug */,
-				63F011571C6E665400B7EB5A /* Release */,
+				6395A1401C72A94E00E6A077 /* Debug */,
+				6395A1411C72A94E00E6A077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 63F0111F1C6E665300B7EB5A /* Project object */;
+	rootObject = 6395A1091C72A94E00E6A077 /* Project object */;
 }
