@@ -9,7 +9,7 @@
 import Foundation
 import ReactiveMoya
 
-public class GmailReactiveTypedAPI {
+public class GmailReactiveTypedAPIProvider {
 	
 	internal let moyaProivder: ReactiveCocoaMoyaProvider<Gmail>
 	

@@ -16,10 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-		
-		print(url)
-		
-		NSNotificationCenter.defaultCenter().postNotificationName(GmailOAuth2.k_OAuthNotificationName, object: url)
+		GmailOAuth2.receivedPotentialOAuthURL(url)
 		return true
 	}
 	

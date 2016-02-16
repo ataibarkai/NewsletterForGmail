@@ -20,25 +20,20 @@ class ViewController: UIViewController {
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
 		
-		if let provider = try? Gmail.provider(
-			withClientId: "789483483852-pb0psft47jr3gds92uvd809tgqrvfcmv.apps.googleusercontent.com",
-			scope: "https://www.googleapis.com/auth/gmail.readonly") {
-				
-				provider.request(
-					.SearchMessages(
-						onUsername: "atai.barkai@gmail.com",
-						withSearchString: "from: frmsaul@gmail.com"
-					)
-				){ (result) -> () in
-					switch result{
-					case .Success(let t):
-						print(t)
-						print(try? t.mapJSON())
-					case .Failure(let error):
-						print(error)
-					}
-				}
+		
+		if let provider = try? GmailReactiveTypedAPIProvider(
+		withClientId: "789483483852-pb0psft47jr3gds92uvd809tgqrvfcmv.apps.googleusercontent.com",
+		scope: "https://www.googleapis.com/auth/gmail.readonly"){
+			
+			provider.searchMessages(
+				onUsername: "atai.barkai@gmail.com",
+				withSearchString: "from: frmsaul@gmail.com"
+			)
+			.startWithNext{ next -> () in
+				print(next)
+			}
 		}
+		
 	}
 
 	override func didReceiveMemoryWarning() {
