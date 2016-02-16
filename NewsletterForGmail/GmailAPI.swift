@@ -13,6 +13,7 @@ import ReactiveMoya
 public enum Gmail {
 	
 	case SearchMessages(onUsername: String, withSearchTerm: SearchTerm)
+	case SearchThreads(onUsername: String, withSearchTerm: SearchTerm)
 }
 
 extension Gmail{
@@ -21,6 +22,8 @@ extension Gmail{
 	public var username: String {
 		switch self {
 		case .SearchMessages(onUsername: let username, withSearchTerm: _):
+			return username
+		case .SearchThreads(onUsername: let username, withSearchTerm: _):
 			return username
 		}
 	}
@@ -33,6 +36,8 @@ extension Gmail: TargetType {
 		switch self {
 		case .SearchMessages(_):
 			return "/messages"
+		case .SearchThreads(_):
+			return "/threads"
 		}
 
 	}
@@ -40,12 +45,18 @@ extension Gmail: TargetType {
 		switch self{
 		case .SearchMessages(_):
 			return .GET
+		case .SearchThreads(_):
+			return .GET
 		}
 	}
 	
 	public var parameters: [String: AnyObject]? {
 		switch self {
 		case .SearchMessages(onUsername: _, withSearchTerm: let searchTerm):
+			return [
+				"q": "\(searchTerm)",
+			]
+		case .SearchThreads(onUsername: _, withSearchTerm: let searchTerm):
 			return [
 				"q": "\(searchTerm)",
 			]
