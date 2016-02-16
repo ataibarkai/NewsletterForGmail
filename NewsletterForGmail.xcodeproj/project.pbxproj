@@ -41,6 +41,8 @@
 		6395A16C1C72A9F900E6A077 /* TypeBurritoFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6395A1761C72B20900E6A077 /* SearchTermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1751C72B20900E6A077 /* SearchTermTests.swift */; };
 		6395A1791C737FD100E6A077 /* SearchTerm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A1781C737FD100E6A077 /* SearchTerm.swift */; };
+		6395A17B1C7381D700E6A077 /* GmailTypedReactiveAPIProvider+searchThreads.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A17A1C7381D700E6A077 /* GmailTypedReactiveAPIProvider+searchThreads.swift */; };
+		6395A17D1C7388C200E6A077 /* GmailThreadReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6395A17C1C7388C200E6A077 /* GmailThreadReference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		6395A15C1C72A9F900E6A077 /* TypeBurritoFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TypeBurritoFramework.framework; path = Carthage/Build/iOS/TypeBurritoFramework.framework; sourceTree = "<group>"; };
 		6395A1751C72B20900E6A077 /* SearchTermTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTermTests.swift; sourceTree = "<group>"; };
 		6395A1781C737FD100E6A077 /* SearchTerm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTerm.swift; sourceTree = "<group>"; };
+		6395A17A1C7381D700E6A077 /* GmailTypedReactiveAPIProvider+searchThreads.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GmailTypedReactiveAPIProvider+searchThreads.swift"; sourceTree = "<group>"; };
+		6395A17C1C7388C200E6A077 /* GmailThreadReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GmailThreadReference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				6395A1441C72A98700E6A077 /* GmailMessageReference.swift */,
+				6395A17C1C7388C200E6A077 /* GmailThreadReference.swift */,
 			);
 			name = "Gmail API Types";
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			children = (
 				6395A1461C72A98700E6A077 /* GmailTypedReactiveAPIProvider.swift */,
 				6395A1471C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift */,
+				6395A17A1C7381D700E6A077 /* GmailTypedReactiveAPIProvider+searchThreads.swift */,
 			);
 			name = GmailTypedReactiveAPIProvider;
 			sourceTree = "<group>";
@@ -433,7 +439,9 @@
 				6395A1511C72A98700E6A077 /* NSMutableURLRequest+OAuth2Signining.swift in Sources */,
 				6395A1501C72A98700E6A077 /* GmailTypedReactiveAPIProvider+searchMessages.swift in Sources */,
 				6395A1791C737FD100E6A077 /* SearchTerm.swift in Sources */,
+				6395A17B1C7381D700E6A077 /* GmailTypedReactiveAPIProvider+searchThreads.swift in Sources */,
 				6395A1521C72A98700E6A077 /* ReactiveCocoa+Moya+SwiftyJSON.swift in Sources */,
+				6395A17D1C7388C200E6A077 /* GmailThreadReference.swift in Sources */,
 				6395A14B1C72A98700E6A077 /* GmailAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

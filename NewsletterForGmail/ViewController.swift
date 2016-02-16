@@ -28,10 +28,18 @@ class ViewController: UIViewController {
 			provider.searchMessages(
 				onUsername: "atai.barkai@gmail.com",
 				withSearchTerm: SearchTerm(.From("frmsaul@gmail.com"))
-			)
-			.startWithNext{ next -> () in
-				print(next)
-			}
+				)
+				.startWithNext{ next -> () in
+					print(next)
+				}
+			
+			provider.searchThreads(
+				onUsername: "atai.barkai@gmail.com",
+				withSearchTerm: SearchTerm(.From("sbarkai@gmail.com"))
+				)
+				.startWithNext{ next -> () in
+					print(next)
+				}
 		}
 		
 	}
