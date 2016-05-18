@@ -14,6 +14,8 @@ It describes the search operations we may use to search for messages in the Gmai
 */
 public struct SearchTerm: Equatable, CustomStringConvertible {
 	
+	private let
+	
 	// stores all of the primitive searches which this SearchTerm is a union of
 	private let primitiveSearches: Set<PrimitiveSearchTerm>
 	
@@ -27,6 +29,10 @@ public struct SearchTerm: Equatable, CustomStringConvertible {
 	
 	func and(anotherSearch: PrimitiveSearchTerm) -> SearchTerm{
 		return SearchTerm(withPrimitiveSearches: self.primitiveSearches.union([anotherSearch]))
+	}
+	
+	func or(anotherSearch: PrimitiveSearchTerm) -> SearchTerm {
+		
 	}
 	
 	

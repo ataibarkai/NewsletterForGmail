@@ -12,6 +12,9 @@ import Moya
 
 public enum Gmail {
 	
+	// TODO: we may be able to get rid of the `username` parameter by using `me` instead.
+	// See: https://developers.google.com/gmail/api/v1/reference/users/messages/list#try-it
+	
 	case SearchMessages(onUsername: String, withSearchTerm: SearchTerm)
 	case SearchThreads(onUsername: String, withSearchTerm: SearchTerm)
 }

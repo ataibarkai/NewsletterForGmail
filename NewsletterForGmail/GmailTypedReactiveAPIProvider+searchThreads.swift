@@ -21,10 +21,10 @@ extension GmailTypedReactiveAPIProvider {
 					onUsername: username,
 					withSearchTerm: searchTerm
 				)
-				)
-				.mapSwiftyJSON()
-				.map { $0["threads"] }
-				.mapArray(GmailThreadReference)
+			)
+			.mapSwiftyJSON()
+			.map { $0["threads"] }
+			.mapArray(GmailThreadReference)
 	}
 }
 

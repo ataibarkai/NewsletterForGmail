@@ -40,7 +40,8 @@ public extension Gmail {
 				// 2 options: (1) parameters are valid | (2) parameters are invalid
 				
 				// option (1): parameters are valid
-				if	let mutableRequest = endpoint.urlRequest.mutableCopy() as? NSMutableURLRequest,
+				if
+					let mutableRequest = endpoint.urlRequest.mutableCopy() as? NSMutableURLRequest,
 					let accessToken = oauth2Object.accessToken {
 						mutableRequest.signOAuth2(withOAuth2Token: accessToken)
 						done(mutableRequest)	// option 1 - call done()

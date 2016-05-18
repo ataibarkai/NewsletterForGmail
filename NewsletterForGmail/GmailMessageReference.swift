@@ -15,7 +15,8 @@ struct GmailMessageReference: SwiftyJSONDecodable {
 	let threadId: String
 	
 	init?(withJSON json: JSON){
-		if	let id =			json["id"].string,
+		if
+			let id =					json["id"].string,
 			let threadId =		json["threadId"].string {
 				self.id = id
 				self.threadId = threadId
