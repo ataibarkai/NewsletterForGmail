@@ -16,15 +16,14 @@ struct GmailThreadReference: SwiftyJSONDecodable {
 	let historyId: String
 	
 	init?(withJSON json: JSON){
-		if	let id =			json["id"].string,
-			let snippet =		json["snippet"].string,
-			let historyId =		json["historyId"].string {
-				self.id = id
-				self.snippet = snippet
-				self.historyId = historyId
-		}
-		else{
-			return nil
-		}
+		guard
+			let _id					= json["id"].string,
+			let _snippet		= json["snippet"].string,
+			let _historyId	= json["historyId"].string
+		else{	return nil }
+		
+		id = _id
+		snippet = _snippet
+		historyId = _historyId
 	}
 }

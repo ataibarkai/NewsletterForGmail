@@ -14,30 +14,31 @@ It describes the search operations we may use to search for messages in the Gmai
 */
 public struct SearchTerm: Equatable, CustomStringConvertible {
 	
-	private let
+	// The search text that this SearchTerm represents.
+	//
+	// Note: we give up some information (yet it is still recoverable)
+	// when we transform a composite SearchTerm into mearly a `String`.
+	// We could instead have a stack that can store either a `SearchTerm` or an operation (and, or)
+	// and compose the same way a calculator could be implemented.
+	// However this point it seems like premature "elegant-ization". Perhaps we will revist this in the future.
+	private let searchText: String
 	
-	// stores all of the primitive searches which this SearchTerm is a union of
-	private let primitiveSearches: Set<PrimitiveSearchTerm>
-	
-	init(_ primitiveSearchTerm: PrimitiveSearchTerm){
-		self.primitiveSearches = [primitiveSearchTerm]
+	// The private (psuedo) "designated" `init` of `SearchTerm`. Simply stuffs the searchText `String`
+	private  init(withSearchText _searchText: String) {
+		searchText = _searchText
 	}
 	
-	private init(withPrimitiveSearches primitiveSearches: Set<PrimitiveSearchTerm>){
-		self.primitiveSearches = primitiveSearches
-	}
-	
-	func and(anotherSearch: PrimitiveSearchTerm) -> SearchTerm{
-		return SearchTerm(withPrimitiveSearches: self.primitiveSearches.union([anotherSearch]))
-	}
-	
-	func or(anotherSearch: PrimitiveSearchTerm) -> SearchTerm {
-		
+	// The public convenience initializer which only lets one create
+	// a new `SearchTerm` from a (well-structured) `PrimitiveSearchTerm`.
+	//
+	// Composite `SearchTerm`s may be created using the `&&` and `||` operators.
+	public init(_ primitiveSearchTerm: PrimitiveSearchTerm){
+		self.init(withSearchText: "\(primitiveSearchTerm)")
 	}
 	
 	
 	public var description: String{
-		return self.primitiveSearches.map{"\($0)"}.joinWithSeparator(" ")
+		return searchText
 	}
 	
 	
@@ -68,6 +69,7 @@ public struct SearchTerm: Equatable, CustomStringConvertible {
 	
 }
 
+// `Equatable` conformance for `SearchTerm.PrimitiveSearchTerm`
 public func == (left: SearchTerm.PrimitiveSearchTerm, right: SearchTerm.PrimitiveSearchTerm) -> Bool {
 	switch (left, right){
 	case (.Keywords(let a), .Keywords(let b)):
@@ -83,6 +85,18 @@ public func == (left: SearchTerm.PrimitiveSearchTerm, right: SearchTerm.Primitiv
 	}
 }
 
+// `Equatable` conformance for `SearchTerm`
 public func == (left: SearchTerm, right:SearchTerm) -> Bool {
-	return (left.primitiveSearches == right.primitiveSearches)
+	return (left.searchText == right.searchText)
 }
+
+// Compose `SearchTerm`s using a logical `AND`
+public func && (left: SearchTerm, right: SearchTerm) -> SearchTerm {
+	return SearchTerm(withSearchText:"(\(left)) (\(right))")
+}
+
+// Compose `SearchTerm`s using a logical `OR`
+public func || (left: SearchTerm, right: SearchTerm) -> SearchTerm {
+	return SearchTerm(withSearchText:"(\(left)) OR (\(right))")
+}
+

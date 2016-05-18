@@ -29,17 +29,45 @@ class SearchTermTests: XCTestCase {
 
 	
 	func testCompositeSearch() {
-		let searchTerm = SearchTerm(.From("frmsaul@gmail.com"))
-			.and(.To("atai.barkai@gmail.com"))
-			.and(.InCategory("inbox"))
 		
-		let searchString = "\(searchTerm)"
+		// Test searches with only `AND` operations
+		let onlyAndSearch =
+				SearchTerm(.From("frmsaul@gmail.com")) &&
+				SearchTerm(.To("atai.barkai@gmail.com")) &&
+				SearchTerm(.InCategory("inbox"))
 		
-		let components = searchString.componentsSeparatedByString(" ")
-		XCTAssertEqual(components.count, 3)
-		XCTAssert(components.contains("from:frmsaul@gmail.com"))
-		XCTAssert(components.contains("to:atai.barkai@gmail.com"))
-		XCTAssert(components.contains("in:inbox"))
+		XCTAssertEqual(
+			"\(onlyAndSearch)",
+			"((from:frmsaul@gmail.com) (to:atai.barkai@gmail.com)) (in:inbox)"
+		)
+		
+		
+		// Test searches with only `OR` operations
+		let onlyOrSearch =
+				SearchTerm(.InCategory("inbox")) ||
+				SearchTerm(.From("atai.barkai@gmail.com")) ||
+				SearchTerm(.To("frmsaul@gmail.com"))
+
+		XCTAssertEqual(
+			"\(onlyOrSearch)",
+			"((in:inbox) OR (from:atai.barkai@gmail.com)) OR (to:frmsaul@gmail.com)"
+		)
+		
+		// Test searches with a combination of `AND`, `OR` operations
+		let orAndSearch =
+				(
+					SearchTerm(.From("frmsaul@gmail.com")) &&
+					SearchTerm(.To("atai.barkai@gmail.com"))
+				) ||
+				(
+					SearchTerm(.InCategory("inbox")) ||
+					SearchTerm(.To("frmsaul@gmail.com"))
+				)
+		XCTAssertEqual(
+			"\(orAndSearch)",
+			"((from:frmsaul@gmail.com) (to:atai.barkai@gmail.com)) OR ((in:inbox) OR (to:frmsaul@gmail.com))"
+		)
+		
 	}
 
 	
