@@ -8,13 +8,13 @@
 
 import Foundation
 import ReactiveCocoa
-import ReactiveMoya
+import Moya
 import SwiftyJSON
 
 extension GmailTypedReactiveAPIProvider {
 	
 	func searchThreads(onUsername username: String, withSearchTerm searchTerm: SearchTerm)
-	 -> SignalProducer<[GmailThreadReference], ReactiveMoya.Error>{
+	 -> SignalProducer<[GmailThreadReference], Error>{
 		
 			return self.moyaProivder.request(
 				Gmail.SearchThreads(

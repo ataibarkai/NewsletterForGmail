@@ -1,0 +1,61 @@
+PODS:
+  - Alamofire (3.4.0)
+  - Moya (6.4.0):
+    - Moya/Core (= 6.4.0)
+  - Moya/Core (6.4.0):
+    - Alamofire (~> 3.0)
+    - Result (~> 2.0)
+  - Moya/ReactiveCocoa (6.4.0):
+    - Moya/Core
+    - ReactiveCocoa (~> 4.1)
+  - p2.OAuth2 (2.2.6):
+    - SwiftKeychain (~> 1.0)
+  - ReactiveCocoa (4.1.0):
+    - ReactiveCocoa/UI (= 4.1.0)
+    - Result (~> 2.0)
+  - ReactiveCocoa/Core (4.1.0):
+    - ReactiveCocoa/no-arc
+    - Result (~> 2.0)
+  - ReactiveCocoa/no-arc (4.1.0):
+    - Result (~> 2.0)
+  - ReactiveCocoa/UI (4.1.0):
+    - ReactiveCocoa/Core
+    - Result (~> 2.0)
+  - Result (2.0.0)
+  - SwiftKeychain (1.0.0)
+  - SwiftyJSON (2.3.2)
+  - TypeBurritoFramework (0.4)
+
+DEPENDENCIES:
+  - Moya
+  - Moya/ReactiveCocoa
+  - p2.OAuth2
+  - ReactiveCocoa
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - TypeBurritoFramework (from `https://github.com/ataibarkai/TypeBurritoFramework.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+  TypeBurritoFramework:
+    :git: https://github.com/ataibarkai/TypeBurritoFramework.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+  TypeBurritoFramework:
+    :commit: 96078ca6ed1858fcd7456fbdde36f392459eb1b6
+    :git: https://github.com/ataibarkai/TypeBurritoFramework.git
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  Moya: 4d526954c8afd79820991393d40d7d8af756ceee
+  p2.OAuth2: a89edc5660aca8a5349882ee9008de793bbbbcd0
+  ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
+  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  SwiftKeychain: fd9ad69f7b3ff7a0c7ba579da508bbaa89a395b2
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TypeBurritoFramework: b0635acd0b503272bad8b93b9376bc63645574b8
+
+COCOAPODS: 0.39.0

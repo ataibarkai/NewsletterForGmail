@@ -8,7 +8,7 @@
 
 import Foundation
 import ReactiveCocoa
-import ReactiveMoya
+import Moya
 import SwiftyJSON
 
 // TODO:
@@ -18,7 +18,7 @@ import SwiftyJSON
 // which is unfortunately defined only on `SignalProducer`.
 // The mistake is infectious.
 // We should fix this as a pull request on ReactiveMoya.
-extension SignalProducerType where Value == ReactiveMoya.Response, Error == ReactiveMoya.Error{
+extension SignalProducerType where Value == Moya.Response, Error == Moya.Error{
 	
 	/// Maps a Moya `Response` to a SwiftyJSON `JSON`
 	func mapSwiftyJSON() -> SignalProducer<SwiftyJSON.JSON, Error> {

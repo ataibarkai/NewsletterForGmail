@@ -8,14 +8,14 @@
 
 import Foundation
 import ReactiveCocoa
-import ReactiveMoya
+import Moya
 import SwiftyJSON
 
 
 extension GmailTypedReactiveAPIProvider {
 	
 	func searchMessages(onUsername username: String, withSearchTerm searchTerm: SearchTerm)
-		-> SignalProducer<[GmailMessageReference], ReactiveMoya.Error>{
+		-> SignalProducer<[GmailMessageReference], Error>{
 		
 		return self.moyaProivder.request(
 			Gmail.SearchMessages(

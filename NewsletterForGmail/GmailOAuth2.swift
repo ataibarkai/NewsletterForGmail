@@ -8,7 +8,7 @@
 //
 
 import Foundation
-import OAuth2
+import p2_OAuth2
 
 /// An enum which amounts to a namespace for Gmail+OAuth2-related actions
 public enum GmailOAuth2 {

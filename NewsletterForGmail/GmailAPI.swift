@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ReactiveMoya
+import Moya
 
 
 public enum Gmail {
@@ -41,7 +41,7 @@ extension Gmail: TargetType {
 		}
 
 	}
-	public var method: ReactiveMoya.Method {
+	public var method: Moya.Method {
 		switch self{
 		case .SearchMessages(_):
 			return .GET

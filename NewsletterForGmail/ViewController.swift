@@ -19,28 +19,28 @@ class ViewController: UIViewController {
 	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
+				
+		guard let provider = try? GmailTypedReactiveAPIProvider(
+			withClientId: "789483483852-pb0psft47jr3gds92uvd809tgqrvfcmv.apps.googleusercontent.com",
+			scope: "https://www.googleapis.com/auth/gmail.readonly")
+		else { preconditionFailure() }
 		
-		
-		if let provider = try? GmailTypedReactiveAPIProvider(
-		withClientId: "789483483852-pb0psft47jr3gds92uvd809tgqrvfcmv.apps.googleusercontent.com",
-		scope: "https://www.googleapis.com/auth/gmail.readonly"){
-			
-			provider.searchMessages(
-				onUsername: "atai.barkai@gmail.com",
-				withSearchTerm: SearchTerm(.From("frmsaul@gmail.com"))
-				)
-				.startWithNext{ next -> () in
-					print(next)
-				}
-			
-			provider.searchThreads(
-				onUsername: "atai.barkai@gmail.com",
-				withSearchTerm: SearchTerm(.From("sbarkai@gmail.com"))
-				)
-				.startWithNext{ next -> () in
-					print(next)
-				}
+		provider.searchMessages(
+			onUsername: "atai.barkai@gmail.com",
+			withSearchTerm: SearchTerm(.From("frmsaul@gmail.com"))
+		)
+		.startWithNext{ next -> () in
+			print(next)
 		}
+		
+		provider.searchThreads(
+			onUsername: "atai.barkai@gmail.com",
+			withSearchTerm: SearchTerm(.From("sbarkai@gmail.com"))
+		)
+		.startWithNext{ next -> () in
+			print(next)
+		}
+		
 		
 	}
 

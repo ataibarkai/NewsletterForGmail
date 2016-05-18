@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import ReactiveMoya
+import Moya
 
 public extension Gmail {
 	
