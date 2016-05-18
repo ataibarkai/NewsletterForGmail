@@ -32,9 +32,21 @@ extension SignalProducerType where Value == ReactiveMoya.Response, Error == Reac
 extension SignalProducerType where Value == SwiftyJSON.JSON {
 	
 	/// Maps data received from the signal into an object which implements the SwiftyJSONDecodable protocol.
-	/// If the conversion fails, the signal errors.
+	/// If the conversion fails, the value returned is nil.
 	public func mapObject<T: SwiftyJSONDecodable>(type: T.Type) -> SignalProducer<T?, Error> {
 		return producer.map { T(withJSON: $0) }
+	}
+	
+	/// Maps data received from the signal into an object which implements the SwiftyJSONDecodable protocol.
+	/// If the conversion fails, the signal errors.
+	public func mapObject<T: SwiftyJSONDecodable>(
+		toType type: T.Type,
+		errorIfNil: Error) -> SignalProducer<T, Error> {
+			return producer
+				.mapObject(type)
+				.flatMap(FlattenStrategy.Concat) {
+					($0 != nil) ? SignalProducer(value: $0!) : SignalProducer(error: errorIfNil)
+			}
 	}
 	
 	/// Maps data received from the signal into an array of objects which implement the SwiftyJSONDecodable protocol.

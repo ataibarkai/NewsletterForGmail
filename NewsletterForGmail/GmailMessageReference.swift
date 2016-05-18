@@ -8,7 +8,6 @@
 
 import Foundation
 import SwiftyJSON
-import SwiftyJSON
 
 struct GmailMessageReference: SwiftyJSONDecodable {
 	
